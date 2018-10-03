@@ -31,8 +31,7 @@ A five-layer architecture model is used by Common Ground to logically separate c
 
 The bottom three layers of the model (data, services and integration) are the layers where data access, business logic, API provisioning and API access are managed. The top two layers of the model contain the business processes and user interfaces for end-users.
 
-![Common Ground model][common-ground-model]
-[common-ground-model]: https://github.com/VNG-Realisatie/common-ground/common-ground-model.png "Common Ground model"
+![Common Ground model](https://github.com/VNG-Realisatie/common-ground/blob/master/common-ground-model.png)
 
 The model has been designed to define clear separations between the layers. Each layer handles a specific aspects of software functionality and interfaces with other layers through well-defined interfaces. This principle of “*separation of concerns*” ensures that changing the user interface does not require changing the business logic code, and vice versa. Each layer of the Common Ground architecture framework addresses specific concerns and each layer is standardised by specifications and standards. These specifications are especially import for the services and integration layers of the framework. These layers specify both the way applications publish their functionality and how applications can use this published functionality. They provide a uniform method for accessing data (interconnectivity) and offer a standardised authentication and authorisation scheme. The service and integration layers are the vital components for breaking up information silos into manageable applications.
 
@@ -63,8 +62,7 @@ The innovation proposed by Common Ground involves a major change of both technol
 
 A federative authorisation model is envisaged by Common Ground. Internal identities of end-users are not used in service calls, the NLX transforms the internal identity of a person or system to an organisational identity before invoking a service. This organisational identity is included in the service call. Service providers are required to check the access rights of a requesting organisation when a service is invoked. Setting up authorisation at the level of organisations instead of end users prevents the need to setup a central user management scheme, and leads to a manageable system. Service providers checks access rights of requesting organisations for all service being invoked. The access rights are arranged in a way which is appropriate for that specific organisation.  
 
-![ommon Ground authorisation scheme][common-ground-auth-scheme]
-[common-ground-auth-scheme]: https://github.com/VNG-Realisatie/common-ground/common-ground-auth-scheme.png "Common Ground authorisation scheme"
+![Common Ground authorisation scheme](https://github.com/VNG-Realisatie/common-ground/blob/master/common-ground-auth-scheme.png)
 
 The role of the employee is used in combination with the purpose binding to determine whether access is authorised (A in the figure). For requests to another organisation (B in the figure), the internal identity associated with the request is converted by the NLX to the identity of the organisation as a whole - the idea is: the employee represents the organisation. In organisation B, the NLX regulates access to the specific service for external requests at the organisation level. All requests are logged so that audits can be carried out.  
 
